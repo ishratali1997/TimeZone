@@ -7,7 +7,6 @@
             <div class="card">
                 <div class="card-header">
                     @foreach ($posts as $post)
-                    {{-- <strong>Title</strong> {{$post->title}} <p>{{$post->created_at->diffForHumans()}}</p> --}}
                     <p><strong>{{$post->dat->format('g:i a')}}</strong></p>
                     @endforeach
                 </div>

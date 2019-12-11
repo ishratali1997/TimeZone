@@ -20,4 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/save-post', 'PostController@store');
+Route::post('/save-teacher', 'TeacherController@store');
 Route::get('/get-post', 'PostController@index');
+
+Route::get('/teacher', 'TeacherController@index');
+Route::get('/teachers', 'TeacherController@teacher');

@@ -7,7 +7,22 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import $ from 'jquery';
+window.$ = window.jQuery = $;
 
+import 'jquery-timepicker/jquery.timepicker.js';
+// $('.datepicker').datepicker();
+$('.timepicker').timepicker({
+    timeFormat: 'hh:mm p',
+    interval: 60,
+    minTime: '10',
+    maxTime: '6:00pm',
+    defaultTime: '11',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
